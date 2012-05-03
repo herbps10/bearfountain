@@ -235,15 +235,43 @@ p {
 }
 
 .box {
-  background-color: #faf4ef;
-  width: 265px;
-  height: 180px;
   display: inline-block;
-  margin: 20px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
+  margin: 16px;
+  padding: 3px 3px 1px 3px;
+  border: 1px solid white;
+  position: relative;
+}
+
+.box a {
+	font-size: 0;
+}
+
+.box:hover {
+  background: white;
+}
+
+.box:hover div {
+	display: block;
+}
+
+.box:hover img {
+	opacity: 0.3;
+}
+
+.box div {
+	display: none;
+	position: absolute;
+	font-size: 30px;
+	top: 50px;
+	left: 10px;
+}
+
+.box div span {
+	margin-top: 10px;
+	display: block;
+	font-size: 13px;
+	font-family: Verdana, sans-serif;
+	color: black;
 }
 
 footer {
