@@ -201,7 +201,7 @@ blockquote::before {
   content: open-quote;
   font-size: 4em;
   line-height: .1em;
-  margin: 10px -40px;
+  margin: 20px -30px;
   position: absolute;
 }
 
@@ -211,6 +211,10 @@ blockquote::after {
   line-height: .1em;
   margin: 40px 40px;
   position: absolute;
+}
+
+blockquote span {
+	font-size: 0.7em;
 }
 
 .bg_bottom h3 {
