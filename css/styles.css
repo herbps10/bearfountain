@@ -71,7 +71,7 @@ body {
   padding: 0 auto;
 }
 
-h1 {
+header h1 {
   font-size: 6em;
   color: #2f3448;
   text-shadow: 0 2px 0 #faf4ef;
@@ -82,7 +82,7 @@ h1 {
   letter-spacing: 2px;
 }
 
-h2{
+header h2 {
   font-size: 3em;
   color: #faf4ef;
   text-shadow: 0 3px 0 #2f3448;
@@ -92,7 +92,7 @@ h2{
   letter-spacing: 3px;
 }
 
-h3 {
+#background h3 {
   font-size: 1.3em;
   font-weight: normal;
   font-style: normal;
@@ -223,6 +223,7 @@ blockquote span {
 
 p {
   margin-top: 12px;
+  margin-bottom: 12px;
   font: normal normal .9em Nunito;
 }
 
@@ -231,6 +232,7 @@ p {
   margin-top: 200px;
   padding: 40px;
   height: 600px;
+  margin-bottom: 400px;
 }
 
 #content_wrapper {
@@ -280,8 +282,6 @@ p {
 }
 
 footer {
-  position: static;
-  bottom: 0;
   z-index: 10;
   background-color: rgba(255, 255, 255, 0.5);
   width: 100%;
@@ -292,4 +292,22 @@ address {
   padding: 4px;
   color: #515151;
   float: right;
+}
+
+#content h1:first-child {
+	margin-top: 0px;
+}
+
+#content h1 {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 2.5em;
+	margin-left: 0px;
+	margin-top: 70px;
+	margin-bottom: 10px;
+}
+
+#content h2 {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1.3em;
+	margin: 20px 0px 5px 0;
 }
