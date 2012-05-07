@@ -161,7 +161,7 @@ header h2 {
 }
 
 .bg_bottom {
-  background-color: #2c3245;
+  background: #2c3245 url(../img/lower-bg.png);
   height: 280px;
 }
 
@@ -178,14 +178,16 @@ header h2 {
   width: 260px;
   padding: 20px;
   float: left;
-  margin-left: -60px;
+  margin-left: -18px;
 }
 
 #right_of_bear {
-  width: 0400px;
+  width: 400px;
   padding: 20px;
   float: right;
   text-align: center;
+  position: relative;
+  top: -45px;
 }
 
 blockquote {
