@@ -92,6 +92,17 @@ header h2 {
   letter-spacing: 3px;
 }
 
+section#portfolio {
+  background-color: #8d1d11;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+section {
+  padding-top: 40px;
+}
+
 #background h3 {
   font-size: 1.3em;
   font-weight: normal;
@@ -232,12 +243,15 @@ p {
 #content {
   /*background-color: #8d1d11;*/
   margin-top: 200px;
-  padding: 40px;
   height: 600px;
   margin-bottom: 400px;
 }
 
 #content_wrapper {
+
+}
+
+.section_wrapper {
   width: 920px;
   margin: auto;
 }
