@@ -51,6 +51,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+a {
+  color: inherit;
+}
 /* @end */
 
 html {
@@ -63,12 +66,6 @@ header {
   width: 920px;
   height:240px;
   margin: 0 auto;
-  overflow: ;
-}
-
-body {
-  margin: 20px 0;
-  padding: 0 auto;
 }
 
 header h1 {
@@ -78,7 +75,7 @@ header h1 {
   text-align: left;
   margin-top: 80px;
   word-spacing: 35px;
-  margin-left: 60px;
+  margin-left: 70px;
   letter-spacing: 2px;
 }
 
@@ -112,7 +109,7 @@ section {
 
 .bear {
   height: 500px;
-  width: 920px;
+  width: 480px;
   position: absolute;
   top: 20px;
   z-index: 10;
@@ -126,7 +123,8 @@ section {
   width: 60px;
   height: 60px;
   background-color: rgba(255, 255, 255, 0.36);
-  margin: -185px 318px;
+  top: 40px;
+  left:438px;
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
   -o-border-radius: 40px;
@@ -187,22 +185,20 @@ section {
 
 #left_of_bear {
   width: 260px;
-  padding: 20px;
   float: left;
   margin-left: -60px;
+  text-align: center;
 }
 
 #right_of_bear {
-  width: 0400px;
+  width: 400px;
   padding: 20px;
   float: right;
-  text-align: center;
 }
 
 blockquote {
   font-weight: normal;
   font-style: normal;
-  margin-top: 80px;
   font-size: 2em;
   quotes: '\201C' '\201D';
   text-shadow: 0 2px 0 #000000;
@@ -212,7 +208,7 @@ blockquote::before {
   content: open-quote;
   font-size: 4em;
   line-height: .1em;
-  margin: 20px -30px;
+  margin: 20px -40px;
   position: absolute;
 }
 
@@ -220,7 +216,7 @@ blockquote::after {
   content: close-quote;
   font-size: 4em;
   line-height: .1em;
-  margin: 40px 40px;
+  margin: 50px 20px;
   position: absolute;
 }
 
@@ -239,7 +235,6 @@ p {
 }
 
 #content {
-  /*background-color: #8d1d11;*/
   margin-top: 200px;
   height: 600px;
   margin-bottom: 400px;
