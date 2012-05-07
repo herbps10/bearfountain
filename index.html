@@ -3,7 +3,46 @@
 	<head> 
 		<title>Bear Fountain Design</title> 
     		<meta http-equiv="Content-type" content="text/html; charset=utf-8" /> 
+		<meta name='keywords' content='geneseo new york web design programming bear fountain design' />
+		<meta name='description' content='Bear Fountain Web Design is a small web design company based in Geneseo, New York. We have over five years of experience building beautiful web sites for organizations, businesses, and individuals.' />
+
     		<link rel="stylesheet" href="css/styles.css" type="text/css" /> 
+
+		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+		<script type='text/javascript' src='js/jquery.smooth-scroll.min.js'></script>
+
+		<script type='text/javascript'>
+		
+		$(document).ready(function() {
+			$('a').smoothScroll();
+
+			$(window).scroll(function() {
+				console.log($(window).scrollTop());
+				if($(window).scrollTop() < 520) {
+					$("section#navigation").css('top', '520px');
+				}
+				else {
+					$("section#navigation").css('top', $(window).scrollTop());
+				}
+			});
+		});
+
+		</script>
+
+
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-31486716-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
 	</head> 
 	<body> 
 	  <header> 
@@ -21,7 +60,7 @@
 	    </div> 
 	    <div id="bear_text"> 
 	      <div id="right_of_bear"> 
-	        <p>We are a small web design firm based in Geneseo, NY. </p>
+	        <p class="large">We are a small web design firm based in Geneseo, NY. </p>
 	        <p>Learn more about us below, and feel free to contact us with any questions.</p>
 	        <a href='mailto:info@bearfountaindesign.com'>info@bearfountaindesign.com</a>
 	      </div> 
@@ -31,42 +70,67 @@
 	    </div> 
 	    <div id="content"> 
 	      <div id="content_wrapper"> 
-          <section id="portfolio">
-            <div class="section_wrapper">
-          		<div class="box"><div>LACS Alumni<span>click to visit the site</span></div><a href='http://lacsalumni.com'><img src='img/portfolio/lacsalumni.png' /></a></div>
-          		<div class="box"><div>Knight Scheduler<span>click to visit the site</span></div><a href='http://knightscheduler.com'><img src='img/portfolio/knightscheduler.png'></a></div> 
-          		<div class="box"><div>WGSU Radio<span>click to visit the site</span></div><a href='http://wgsu.geneseo.edu'><img src='img/portfolio/wgsu.png'></a></div> 
-          		<div class="box"><div>Outing Club<span>click to visit the site</span></div><a href='http://geneseo.edu/~outing'><img src='img/portfolio/goc.png'></a></div> 
-          		<div class="box"><div>Besemer Hill Greenhouses<span>click to visit the site</span></div><a href='http://www.geneseo.edu/~outing'><img src='img/portfolio/greenhouse.png'></a></div> 
-          		<div class="box"><div>Gary Berrcow<span>click to visit the site</span></div><a href='http://www.garybercow.com'><img src='img/portfolio/garybercow.png'></a></div> 
-          	</div>
-        	</section>
-        	
+      		<nav>
+      			<ul>
+      				<li><a href='#portfolio'>Portfolio</a></li>
+      				<li><a href='#services'>Services</a></li>
+      				<li><a href='#about-us'>About Us</a></li>
+      				<li><a href='#contact'>Contact</a></li>
+      			</ul>
+      		</nav>
+                	<section id="portfolio">
+      			<div class="section_wrapper">
+      				<div class="box"><div>LACS Alumni<span>click to visit the site</span></div><a href='http://lacsalumni.com'><img src='img/portfolio/lacsalumni.png' /></a></div>
+      				<div class="box"><div>Knight Scheduler<span>click to visit the site</span></div><a href='http://knightscheduler.com'><img src='img/portfolio/knightscheduler.png' /></a></div> 
+      				<div class="box"><div>WGSU Radio<span>click to visit the site</span></div><a href='http://wgsu.geneseo.edu'><img src='img/portfolio/wgsu.png' /></a></div> 
+      				<div class="box"><div>Outing Club<span>click to visit the site</span></div><a href='http://geneseo.edu/~outing'><img src='img/portfolio/goc.png' /></a></div> 
+      				<div class="box"><div>Besemer Hill Greenhouses<span>click to visit the site</span></div><a href='http://www.geneseo.edu/~outing'><img src='img/portfolio/greenhouse.png' /></a></div> 
+      				<div class="box"><div>Gary Berrcow<span>click to visit the site</span></div><a href='http://www.garybercow.com'><img src='img/portfolio/garybercow.png' /></a></div> 
+      			</div>
+      		</section>
+              	
           <section id="services">
             <div class="section_wrapper">
-	      	    <h2>Services</h2>
-          		<h3>Custom Design</h3>
-          		<p>We build original designs handcoded in standards compliant XHTML and CSS. We can help you build a powerful web presence by designing a modern look for your website that fits your business.</p>
-          		<p>We have a combined ten years of experience with web design. We have built websites for organizations, businesses, and individuals. This has included creating blogs and setting up e-commerce websites.</p>
-          
-          		<h2>Web Programming</h2>
-          		<p>Our experience includes developing web applications using PHP and Ruby on the server side and dynamic frontends with Javascript. For data storage, our applications have used SQL databases as well as innovative non relational datastores such as Redis.</p>
+        	    <h2>Services</h2>
+        	    <div class="service">
+          		  <h3>Custom Design</h3>
+            		<p>We build original designs handcoded in standards compliant HTML and CSS. We can help you build a powerful web presence by designing a modern look for your website that fits your business.</p>
+            	</div>
+            	<div class="service">
+            		<h3>Web Programming</h3>
+            		<p>Our experience includes developing web applications using PHP and Ruby on the server side and dynamic frontends with Javascript. For data storage, our applications have used SQL databases as well as innovative non relational datastores such as Redis.</p>
+            	</div>
           	</div>
           </section>
-
-          <section>
+      
+          <section id="about">
             <div class="section_wrapper">
-              <h2>Contact</h2>
-          		<p>We would love to talk to you about how we can help build your web presence.</p>
-          	  <p><a href='mailto:info@bearfountaindesign.com'>info@bearfountaindesign.com</a></p>
-          		<p>(607) 227-2959</p>
+              <h2>About Us</h2>
+              <div id="us">
+                <div id="herb">
+                  <h3>Herb Susmann</h3>
+                  <a href="http://www.herbsusmann.com">HerbSusmann.com</a>
+                  <p>Bios coming soon!</p>
+                </div>
+                <div id="elliott">
+                  <h3>Elliott Regan</h3>
+                  <a href="http://www.eregan.db-dev.info">ElliottRegan.com</a>
+                  <p>Bios coming soon!</p>
+                </div>
+              </div>
         		</div>
           </section>
-	      </div> 
-
+          
+          <section id="contact">
+            <div class="section_wrapper">
+              <h2>Contact Us</h2>
+              <p>We would love to talk to you about how we can help build your web presence.</p>
+              <p><a href='mailto:info@bearfountaindesign.com'>info@bearfountaindesign.com</a></p>
+              <p>(607) 227-2959</p>
+              <address>Geneseo, NY 14454</address>
+            </div>
+          </section>
+        </div> 
 	    </div> 
-	    <footer> 
-	      <address>Geneseo, NY 14454</address> 
-	    </footer> 
 	</body> 
 </html>
