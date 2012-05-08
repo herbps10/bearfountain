@@ -21,12 +21,11 @@
 			$('a').smoothScroll();
 
 			$(window).scroll(function() {
-				console.log($(window).scrollTop());
 				if($(window).scrollTop() < 520) {
-					$("section#navigation").css('top', '520px');
+					$("nav").css('top', '520px');
 				}
 				else {
-					$("section#navigation").css('top', $(window).scrollTop());
+					$("nav").css('top', $(window).scrollTop());
 				}
 			});
 		});
@@ -78,7 +77,7 @@
       			<ul>
       				<li><a href='#portfolio'>Portfolio</a></li>
       				<li><a href='#services'>Services</a></li>
-      				<li><a href='#about-us'>About Us</a></li>
+      				<li><a href='#about'>About Us</a></li>
       				<li><a href='#contact'>Contact</a></li>
       			</ul>
       		</nav>
@@ -113,21 +112,25 @@
               <div id="us">
                 <div id="herb">
                   <h3>Herb Susmann</h3>
-                  <a href="http://www.herbsusmann.com">HerbSusmann.com</a>
-                  <p>Bios coming soon!</p>
+			<img src='img/herb.jpg' alt='Herb Susmann' />
+			  <a href="http://www.herbsusmann.com">HerbSusmann.com</a>
+			  <p>Herb started building websites when he was eight years old. Since his first website, "Herb's World Wide Web Page", he has picked up experience in myriad technologies. He has three years of experience working as a programming subcontractor. Additionally, he has completed numerous freelance projects.
                 </div>
                 <div id="elliott">
-                  <h3>Elliott Regan</h3>
-                  <a href="http://www.eregan.db-dev.info">ElliottRegan.com</a>
-                  <p>Bios coming soon!</p>
+                  	<h3>Elliott Regan</h3>
+			<img src='img/elliott.jpg' alt='Elliott Regan' />
+
+                  	<a href="http://www.eregan.db-dev.info">ElliottRegan.com</a>
+                  	<p>Bios coming soon!</p>
                 </div>
               </div>
-        		</div>
+        	</div>
           </section>
           
           <section id="contact">
             <div class="section_wrapper">
               <h2>Contact Us</h2>
+
               <p>We would love to talk to you about how we can help build your web presence.</p>
               <p><a href='mailto:info@bearfountaindesign.com'>info@bearfountaindesign.com</a></p>
               <p>(607) 227-2959</p>
