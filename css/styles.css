@@ -136,9 +136,13 @@ section#services {
 
 .service {
   display: inline-block;
-  width: 40%;
   vertical-align: top;
-  margin: 10px;
+  width: 430px; 
+  text-align: justify;
+}
+
+.service.left {
+  margin-right: 40px;
 }
 
 .bear {
@@ -284,13 +288,13 @@ p {
 }
 
 .section_wrapper {
-  width: 920px;
+  width: 921px;
   margin: auto;
 }
 
 .box {
   display: inline-block;
-  margin-right: 16px;
+  margin-right: 32px;
   margin-bottom: 16px;
   padding: 3px 3px 1px 3px;
   border: 1px solid #6d6d6d;
