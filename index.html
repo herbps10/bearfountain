@@ -2,12 +2,12 @@
 <!DOCTYPE html> 
 <html> 
   <head> 
-    <title>Bear Fountain Design</title> 
-        <meta http-equiv="Content-type" content="text/html; charset=utf-8" /> 
+    <title>Bear Fountain Design - Web Design &amp; Development</title> 
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" /> 
     <meta name='keywords' content='geneseo new york web design programming bear fountain design' /> 
     <meta name='description' content='Bear Fountain Web Design is a small web design company based in Geneseo, New York. We have over five years of experience building beautiful web sites for organizations, businesses, and individuals.' /> 
  
-        <link rel="stylesheet" href="css/styles.css" type="text/css" /> 
+    <link rel="stylesheet" href="css/styles.css" type="text/css" /> 
  
     <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script> 
     <script type='text/javascript' src='js/jquery.smooth-scroll.min.js'></script> 
@@ -62,9 +62,18 @@
       <div class="bg_bottom"></div> 
     </div> 
     <div id="bear_text"> 
-      <div id="right_of_bear"> 
-        <p class="large">We are a small web design firm based in Geneseo, NY. </p> 
-        <p>Learn more about us below, and feel free to contact us with any questions.</p> 
+      <div id="right_of_bear" itemscope itemtype='http://data-vocabulary.org/Organization'> 
+        <span style='display: none' itemprop='name'>Bear Fountain Design</span>
+        <span style='display: none' itemprop='url'>http://bearfountaindesign.com</span>
+
+        <p class="large">We are a web design firm that builds creative websites with cutting edge technology. </p> 
+        <p>
+          <span itemprop='address' itemscope itemtype="http://data-vocabulary.org/Address">
+            <span itemprop='street-address'>37 Main Street, Apartment B</span><br/>
+            <span itemprop='locality'>Geneseo</span>, <span itemprop='region'>NY</span> 14454<br/>
+          </span>
+          <span itemprop='tel'>607-227-2959</span>
+        </p>
         <a href='mailto:info@bearfountaindesign.com'>info@bearfountaindesign.com</a> 
       </div> 
       <div id="left_of_bear"> 
@@ -122,7 +131,9 @@
             <h2>We like data</h2> 
             <div class="light_wrapper"> 
               <p>One of the largest challenges in web design is creating intuitive methods to interact with data. We have experience managing and organizing data in many different forms.</p> 
-              <p>In our <a href="http://www.knightscheduler.com">Knight Scheduler</a> web app, we collected and arranged the course listings for SUNY Geneseo, and arranged the courses in a way that was easy and intuitive for students to browse. We also work with statistical data, bringing meaning to what most people see as numbers.</p> 
+
+              <p>For example, in our <a href="http://www.knightscheduler.com">Knight Scheduler</a> web application, we collected and arranged the course listings for SUNY Geneseo, and arranged the courses in a way that was easy and intuitive for students to browse. We also work with statistical data, bringing meaning to what most people see as numbers.</p> 
+
               <p>We can help you display your data so that your customers can find what they need quickly and easily.</p> 
             </div> 
           </div> 
@@ -133,11 +144,12 @@
             <h2>About Us</h2> 
             <div id="us" class="light_wrapper"> 
               <div id="herb"> 
-                <h3>Herb Susmann - <a href="http://www.herbsusmann.com">HerbSusmann.com</a></h3> 
-                <p>Herb started building websites when he was eight years old. Since his first website, "Herb's World Wide Web Page", he has picked up experience in myriad technologies. He has three years of experience working as a programming subcontractor. Additionally, he has completed numerous freelance projects.</p> 
+                <h3>Herb Susmann - <a href="http://www.herbsusmann.com">HerbSusmann.com</a>, <a href='http://github.com/herbps10'>Github</a></h3>
+                <p>Herb started building websites when he was eight years old. Since his first website, "Herb's World Wide Web Page", he has picked up experience in myriad technologies. He has three years of experience working as a programming subcontractor, in addition to having completed numerous freelance projects.</p>
+                <p><a href='http://github.com/herbps10'>github</a></p>
               </div> 
               <div id="elliott"> 
-                <h3>Elliott Regan - <a href="http://www.eregan.db-dev.info">ElliottRegan.com</a></h3> 
+                <h3>Elliott Regan - <a href="http://www.eregan.db-dev.info">ElliottRegan.com</a>, <a href='http://github.com/elliottregan'>Github</a></h3> 
                 <p>Bio coming soon!</p> 
               </div> 
             </div> 
@@ -150,7 +162,8 @@
             <div class="light_wrapper"> 
               <p>We would love to talk to you about how we can help build your web presence.</p> 
               <a href='mailto:info@bearfountaindesign.com'>info@bearfountaindesign.com</a><br /><br /> 
-              <p>You can also call Herb at: (607) 227-2959</p> 
+
+              <p>You can call Herb at: (607) 227-2959</p> 
               <p>or Elliott at: (315) 454-2885</p> 
             </div> 
           </div> 
