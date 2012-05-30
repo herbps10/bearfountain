@@ -61,6 +61,7 @@ html {
 body {
   width: 960px;
   margin: auto;
+  padding: 0 20px;
 }
 
 header {
@@ -98,13 +99,15 @@ header .contact_link {
   font-weight: 700;
   font-size: 2.0em;
   white-space: pre;
+  text-shadow: 0 1px 1px #ffffff;
 }
  
 #content h2 {
-  color: #808080;
+  color: #8b8b8b;
   font-size: 1.6em;
   font-weight: 700;
   width: 540px;
+  text-shadow: 0 1px 1px #ffffff;
 }
  
 #content h3 {
@@ -113,7 +116,7 @@ header .contact_link {
   font-weight: 400;
   padding-left: 20px;
   margin-left: -23px;
-  border-left: 4px solid #d00b0b;
+/*  border-left: 4px solid #d00b0b;*/
   padding-bottom: 4px;
   padding-top: 4px;
   margin-top: -4px;
@@ -125,37 +128,42 @@ header .contact_link {
 
 section {
   margin: 60px 0;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 20px;
 }
 
 #color {
   background: url(../img/Bear_Fountain_in_Geneseo.jpg) no-repeat fixed;
   background-size: 100%;
-  padding: 20px;
+  padding: 40px;
+  margin: 0;
   height: 480px;
   width: 100%;
   position: absolute;
   z-index: -1;
-  left: -20px;
-  -moz-box-shadow: inset 0 -20px 20px #ffffff;
-  -webkit-box-shadow: inset 0 -20px 20px #ffffff;
-  box-shadow: inset 0 -20px 20px #ffffff;
+  left: -40px;
+  -moz-box-shadow: inset 0 -40px 40px #ffffff;
+  -webkit-box-shadow: inset 0 -40px 40px #ffffff;
+  box-shadow: inset 0 -40px 40px #ffffff;
 }
 
 section#intro {
-  margin: 60px auto 240px;
+  margin: 60px auto 280px;
   padding: 40px 30px;
   width: 700px;
   background-color: rgba(255, 255, 255, 0.69);
   border-radius: 8px;
-  -moz-box-shadow: 0 0 20px rgba(255, 255, 255, 0.67);
-  -webkit-box-shadow: 0 0 20px rgba(255, 255, 255, 0.67);
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.67);
+  -moz-box-shadow: 0 0 40px rgba(255, 255, 255, 0.67);
+  -webkit-box-shadow: 0 0 40px rgba(255, 255, 255, 0.67);
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.67);
   border: 1px solid #ffffff;
 } 
 
 nav {
   z-index: 100;
   margin: 20px 0;
+  width: 780px;
+  margin: auto;
   -webkit-transition: all 200ms ease-in;
   -moz-transition: all 200ms ease-in;
   -ms-transition: all 200ms ease-in;
@@ -222,17 +230,7 @@ strong {
  
 section#contact {
   margin-bottom: 200px;
-}
-
-.service.wide {
-  width: 100%;
-}
- 
-.light_wrapper {
-  background-color: rgba(255, 255, 255, 0.65);
-  padding: 10px;
-  border: 1px dashed #bdbdbd;
-}
+} 
 
 section#services li {
   width: 300px;
@@ -292,8 +290,8 @@ blockquote footer:before {
 blockquote::before { 
   content: open-quote;
   left: -60px;
-  top: 78px;
-  padding: 4px 4px 0;
+  top: 60px;
+  padding: 4px 4px 10px;
   border-radius: 3px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -386,6 +384,11 @@ body > footer {
   background-color: rgb(46, 46, 46);
   color: #faf4ef;
   padding: 10px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  font-size: .7em;
+  font-weight: 400;
 }
 
 #bear {
@@ -394,16 +397,18 @@ body > footer {
   float: left;
 }
 
+section#why li {
+  width: 65%;
+}
+
 section#why li h4 {
   display: inline;
 }
 
 section #showcase_wrapper {
-  border-top: 1px solid #b4b4b4;
-  border-bottom: 1px solid #b4b4b4;
   width: 910px;
   margin: 0 -20px;
-  padding: 20px 40px;
+  padding: 0 40px;
 } 
 
 section#showcase .site {
