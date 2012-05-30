@@ -54,15 +54,14 @@ a {
 /* @end */
  
 html {
-  font-family: 'Ubuntu';
-  font-weight: 400;
-  background: white;
-  font-size: 1.3em;
+  font: 400 1.3em 'Ubuntu';
+  background-size: 100%;
 }
  
 body {
-  width: 720px;
+  width: 960px;
   margin: auto;
+  padding: 0 20px;
 }
 
 header {
@@ -72,7 +71,7 @@ header {
 }
  
 header h1 {
-  font-size: 2.8em;
+  font-size: 1.6em;
   color: #45648c;
   text-align: left;
   text-shadow: 0 2px 0 #383838;
@@ -80,11 +79,10 @@ header h1 {
 }
  
 header h2 {
-  font-size: 1.8em;
+  font-size: 0.8em;
   color: #383838;
   text-align: left;
   text-shadow: 0 1px 0 #ffffff;
-  margin-left: 5px;
   font-weight: 500;
 }
 
@@ -96,22 +94,20 @@ header .contact_link {
   font-size: .9em;
 }
  
-#content {
-  width: 720px;
-}
- 
 #content h1 {
-  margin: 40px 0 6px;
+  margin: 0 0 6px;
   font-weight: 700;
-  font-size: 2.4em;
+  font-size: 2.0em;
   white-space: pre;
+  text-shadow: 0 1px 1px #ffffff;
 }
  
 #content h2 {
-  color: #808080;
-  font-size: 1.8em;
+  color: #8b8b8b;
+  font-size: 1.6em;
   font-weight: 700;
   width: 540px;
+  text-shadow: 0 1px 1px #ffffff;
 }
  
 #content h3 {
@@ -120,23 +116,54 @@ header .contact_link {
   font-weight: 400;
   padding-left: 20px;
   margin-left: -23px;
-  border-left: 4px solid #d00b0b;
+/*  border-left: 4px solid #d00b0b;*/
   padding-bottom: 4px;
   padding-top: 4px;
   margin-top: -4px;
 }
 
+#content h4 {
+  font-weight: 500;
+}
+
 section {
   margin: 60px 0;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 20px;
+}
+
+#color {
+  background: url(../img/Bear_Fountain_in_Geneseo.jpg) no-repeat fixed;
+  background-size: 100%;
+  padding: 40px;
+  margin: 0;
+  height: 480px;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  left: -40px;
+  -moz-box-shadow: inset 0 -40px 40px #ffffff;
+  -webkit-box-shadow: inset 0 -40px 40px #ffffff;
+  box-shadow: inset 0 -40px 40px #ffffff;
 }
 
 section#intro {
-  margin: 100px 0px;
+  margin: 60px auto 280px;
+  padding: 40px 30px;
+  width: 700px;
+  background-color: rgba(255, 255, 255, 0.69);
+  border-radius: 8px;
+  -moz-box-shadow: 0 0 40px rgba(255, 255, 255, 0.67);
+  -webkit-box-shadow: 0 0 40px rgba(255, 255, 255, 0.67);
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.67);
+  border: 1px solid #ffffff;
 } 
 
 nav {
   z-index: 100;
   margin: 20px 0;
+  width: 780px;
+  margin: auto;
   -webkit-transition: all 200ms ease-in;
   -moz-transition: all 200ms ease-in;
   -ms-transition: all 200ms ease-in;
@@ -144,6 +171,7 @@ nav {
   transition: all 200ms ease-in;
   font-size: .9em;
   color: #383838;
+  text-align: right;
 }
 
 nav li {
@@ -170,7 +198,7 @@ nav li a:first-of-type {
 }
 
 nav li.current a {
-  border-bottom: 2px solid #838383;
+  border-bottom: 2px solid #b30101;
 }
 
 /*nav li.current:after {
@@ -202,18 +230,25 @@ strong {
  
 section#contact {
   margin-bottom: 200px;
+} 
+
+section#services li {
+  width: 300px;
+  float: left;
+  margin: 10px;
+  padding: 2px;
 }
 
-.service.wide {
-  width: 100%;
+section#services li:first-of-type {
+  margin-left: 0;
+  padding-left: 0;
 }
- 
-.light_wrapper {
-  background-color: rgba(255, 255, 255, 0.65);
-  padding: 10px;
-  border: 1px dashed #bdbdbd;
+
+section#services li:last-of-type {
+  margin-right: 0;
+  padding-right: 0;
 }
- 
+
 .service:not(.wide) {
   display: inline-block;
   vertical-align: top;
@@ -230,53 +265,7 @@ section#contact {
   margin-right: 40px;
 }
  
-.glow {
-  opacity: 0;
-  position: absolute;
-  z-index: 100;
-  width: 60px;
-  height: 60px;
-  background-color: rgba(255, 255, 255, 0.36);
-  top: 40px;
-  left:438px;
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  -o-border-radius: 40px;
-  border-radius: 40px;
-  -moz-box-shadow: 0 0 40px #ffffff;
-  -webkit-box-shadow: 0 0 40px #ffffff;
-  box-shadow: 0 0 40px #ffffff;
-  
-  
-  -webkit-transition: all 2s ;
-  -moz-transition: all 2s ;
-  -ms-transition: all 2s ;
-  -o-transition: all 2s ;
-  transition: all 2s ;
-}
- 
-.glow:hover {
-  opacity: 1;
-}
- 
-#background {
-  position: absolute;
-  top: 0;
-  z-index: -10;
-  width: 100%;
-  overflow: hidden;
-}
- 
-.bg_top {
-  background-color: #699aa7;
-  height: 240px;
-}
- 
-.bg_bottom {
-  background: #2c3245 url(../img/lower-bg.png);
-  height: 280px;
-}
- 
+
 blockquote {
   font-weight: 400;
   font-style: normal;
@@ -284,7 +273,7 @@ blockquote {
   width: 640px;
   margin: 40px auto;
   text-align: justify;
-  font-size: 1.1em;
+  font-size: .8em;
   text-indent: 20px;
 }
 
@@ -301,8 +290,8 @@ blockquote footer:before {
 blockquote::before { 
   content: open-quote;
   left: -60px;
-  top: 78px;
-  padding: 4px 4px 0;
+  top: 60px;
+  padding: 4px 4px 10px;
   border-radius: 3px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -336,11 +325,14 @@ p {
   margin-top: 12px;
   margin-bottom: 12px;
   font-weight: 300;
+  line-height: 1.2em;
 }
 
 section li {
   margin: 15px 0;
   font-weight: 300;
+  line-height: 1.2em;
+  font-size: .9em;
 }
  
 .box {
@@ -392,23 +384,47 @@ body > footer {
   background-color: rgb(46, 46, 46);
   color: #faf4ef;
   padding: 10px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  font-size: .7em;
+  font-weight: 400;
 }
 
 #bear {
-  width: 130px;
-  margin-left: 60px;
-  margin-top: 60px;
+  width: 80px;
+  margin: 190px 20px 60px;
   float: left;
 }
- 
-#us div a {
-  font: normal .8em 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+section#why li {
+  width: 65%;
 }
- 
+
+section#why li h4 {
+  display: inline;
+}
+
+section #showcase_wrapper {
+  width: 910px;
+  margin: 0 -20px;
+  padding: 0 40px;
+} 
+
+section#showcase .site {
+  display: inline-block;
+  margin: 12px;
+  padding: 4px;
+  border: 1px solid #d2d2d2;
+  -moz-box-shadow: inset 0 0 4px #d2d2d2;
+  -webkit-box-shadow: inset 0 0 4px #d2d2d2;
+  box-shadow: inset 0 0 4px #d2d2d2;
+}
+
 section a {
   border-bottom: 1px dotted #bdbdbd;
 }
- 
+
 section a:hover {
   border-bottom: 1px solid #2c3245;
 }
