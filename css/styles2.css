@@ -61,7 +61,6 @@ html {
 body {
   width: 960px;
   margin: auto;
-  padding: 0 20px;
 }
 
 header {
@@ -144,19 +143,33 @@ section {
   padding-top: 20px;
 }
 
+#color_wrapper {
+  width: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  height: 500px;
+}
+
 #color {
   background: url(../img/Bear_Fountain_in_Geneseo.jpg) no-repeat fixed;
   background-size: 100%;
-  padding: 40px;
   margin: 0;
-  height: 480px;
+  height: 500px;
   width: 100%;
-  position: absolute;
+  position: relative;
   z-index: -1;
-  left: -40px;
-  -moz-box-shadow: inset 0 -40px 40px #ffffff;
-  -webkit-box-shadow: inset 0 -40px 40px #ffffff;
-  box-shadow: inset 0 -40px 40px #ffffff;
+
+}
+
+.fade_up {
+  height: 80px;
+  width: 120%;
+  left: -10%;
+  position: relative;
+  -moz-box-shadow: 0 -40px 40px #ffffff;
+  -webkit-box-shadow: 0 -40px 40px #ffffff;
+  box-shadow: 0 -40px 40px #ffffff;
 }
 
 section#intro {
@@ -197,9 +210,9 @@ nav li a:hover {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border: 1px solid #ccc;
-  left: 980px;
-  right: -180px;
+  right: -140px;
   box-shadow: 0px 0px 3px #ccc;
+  width: 150px;
 }
 
 .belowFold li {
@@ -472,12 +485,16 @@ section li {
 body > footer {
   background-color: rgb(46, 46, 46);
   color: #faf4ef;
-  padding: 10px;
+  padding: 10px 0;
   width: 100%;
   position: absolute;
   left: 0;
   font-size: .7em;
   font-weight: 400;
+}
+
+body > footer div, body > footer address {
+  margin-left: 10px;
 }
 
 #bear {
