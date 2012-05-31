@@ -292,14 +292,14 @@ section#services li {
 .ic_service.search {
   background: url(../img/search.png) no-repeat center center;
 }
-.ic_service.design {
-  background: url(../img/design.png) no-repeat center center;
+.ic_service.blog {
+  background: url(../img/blog.png) no-repeat center center;
 }
-.ic_service.design {
-  background: url(../img/design.png) no-repeat center center;
+.ic_service.content {
+  background: url(../img/compass.png) no-repeat center center;
 }
-.ic_service.design {
-  background: url(../img/design.png) no-repeat center center;
+.ic_service.code {
+  background: url(../img/code.png) no-repeat center center;
 }
 
 section#services li.first {
