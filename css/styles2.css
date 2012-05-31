@@ -499,6 +499,10 @@ section#why li h4 {
  * SHOWCASE 
  *************/
 
+#showcase a {
+  border: none;
+}
+
 #showcase ul {
   position: relative;
 }
@@ -510,7 +514,6 @@ section#why li h4 {
 
 #showcase ul li {
   border: 3px solid white;
-  box-shadow: 1px 1px 5px #ccc;
   width: 920px;
 }
 
