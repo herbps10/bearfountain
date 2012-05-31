@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="css/styles2.css" type="text/css" /> 
  
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:500italic,700italic,500,300,700,400italic,300italic,400|Droid+Sans' rel='stylesheet' type='text/css'>
+
     <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script> 
     <script type='text/javascript' src='jquery.smooth-scroll.min.js'></script>
-    <script type='text/javascript' src='scripts.js'></script>
+    <script type='text/javascript' src='js/jquery.bxSlider.min.js'></script>
  
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -20,6 +21,7 @@
     <script type='text/javascript'> 
     
     $(document).ready(function() {
+      /*
       $('a').smoothScroll();
  
       $(window).scroll(function() {
@@ -29,6 +31,14 @@
         else {
           $("nav").css('top', $(window).scrollTop());
         }
+      });
+      */
+
+      $("#showcase ul").bxSlider({
+        auto: true,
+        autoControl: true,
+        prevText: '&nbsp;<',
+        nextText: '&nbsp;>'
       });
     });
  
@@ -89,16 +99,14 @@
         </section>
         <section id="showcase">
           <h3>Take a look at some of our work:</h3>
-          <div id="showcase_wrapper">
-            <div class="site">
-              <img src="img/portfolio/goc.png" alt="wgsu site" />
-            </div>
-            <div class="site">
-              <img src="img/portfolio/wgsu2.png" alt="wgsu site" />
-            </div>
-            <div class="site">
-              <img src="img/portfolio/ks.png" alt="wgsu site" />
-            </div>
+            <ul>
+              <li><a href='http://wgsu.geneseo.edu'><img src='img/portfolio/wgsu-large.png' alt='WGSU Radio' /></a></li>
+              <li><a href='http://lhfithaca.org'><img src='img/portfolio/lhfithaca-large.png' alt='Living Hope Fellowship' /></a></li>
+              <li><a href='http://bhgreenhouse.com'><img src='img/portfolio/greenhouse-large.png' alt='Besemer Hill Greenhouses' /></a></li>
+              <li><a href='http://garybercow.com'><img src='img/portfolio/gary-large.png' alt='Gary Bercow' /></a></li>
+              <li><a href='http://www.geneseo.edu/~outing'><img src='img/portfolio/outing-large.png' alt='Geneseo Outing Club' /></a></li>
+              <li><a href='http://knightscheduler.com'><img src='img/portfolio/knightscheduler-large.png' alt='Geneseo Outing Club' /></a></li>
+            </ul>
           </div>
         </section>
         <section id="why">
@@ -106,7 +114,7 @@
           <h3>Why should you hire us?</h3>
           <ul>
             <li><h4>We're Fast.</h4> You tell us what you want, we'll get it done quickly.</li>
-            <li><h4>We're affordable.</h4>You tell us your budget, we'll work with you to get you the most out of it.</li>
+            <li><h4>We're affordable.</h4>You tell us your budget, we'll work with you to get the most out of it.</li>
             <li><h4>We're dependable.</h4> You can contact us anytime by phone, email, or come right to our door. We're happy to talk any time.</li>
             <li><h4>We'll have fun with it.</h4> You'll get out best work because we love what we do. (Believe it or not, this is what we do in our spare time, too!)</li>
           </ul>
@@ -142,7 +150,7 @@
                   </div>
 
                   <div class='actions'>
-                    <input type='submit' value='Send!' />
+                    <input type='submit' value='Send &raquo;' />
                   </div>
               </form>
             </div>

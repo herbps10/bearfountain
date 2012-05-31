@@ -179,7 +179,7 @@ nav li {
 }
  
 nav li a {
-  padding: 10px 0;
+  padding: 10px 0 3px;
   margin: 0 10px;
 }
 
@@ -198,7 +198,7 @@ nav li a:first-of-type {
 }
 
 nav li.current a {
-  border-bottom: 2px solid #b30101;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
 }
 
 /*nav li.current:after {
@@ -249,6 +249,7 @@ strong {
   padding: 7px 5px 10px 5px;
   border-radius: 6px;
   border: 1px solid #ccc;
+  box-shadow: inset 0px 0px 5px white;
 }
 
 section#services li {
@@ -424,25 +425,50 @@ section#why li h4 {
   display: inline;
 }
 
-section #showcase_wrapper {
-  width: 910x;
-  margin: 0 -20px;
-  padding: 0 0 0 10px;
-} 
 
-#showcase .site {
-  display: inline-block;
-  width: 300px;
-  margin: 10px;
+/*************
+ * SHOWCASE 
+ *************/
+
+#showcase ul {
+  position: relative;
 }
 
-#showcase .site img {
-  padding: 4px;
-  border: 1px solid #d2d2d2;
-  -moz-box-shadow: inset 0 0 4px #d2d2d2;
-  -webkit-box-shadow: inset 0 0 4px #d2d2d2;
-  box-shadow: inset 0 0 4px #d2d2d2;
+#showcase ul li img {
+  width: 920px;
+  border: 1px solid #ccc;
 }
+
+#showcase ul li {
+  border: 3px solid white;
+  box-shadow: 1px 1px 5px #ccc;
+  width: 920px;
+}
+
+.bx-next, .bx-prev {
+  position: absolute;
+  top: 250px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 100px;
+  height: 30px;
+  width: 30px;
+  display: block;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 20pt;
+  font-weight: bold;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 0px black;
+}
+
+.bx-prev {
+  left: -50px;
+}
+
+.bx-next {
+  right: -50px;
+}
+
+
 
 section a {
   border-bottom: 1px dotted #bdbdbd;
@@ -476,6 +502,19 @@ form input[type=text] {
 form textarea {
   width: 500px;
   height: 300px;
+}
+
+form input[type=submit] {
+  background: #8DBEE3;
+  border: 1px solid white;
+  padding: 5px 10px;
+  margin-top: 10px;
+  font-size: 16pt;
+  font-weight: bold;
+  text-shadow: 1px 1px 0px white;
+  box-shadow: 0px 0px 3px #ccc;
+  cursor: pointer;
+  border-radius: 6px;
 }
 
 .clear { clear: both }
