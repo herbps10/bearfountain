@@ -95,22 +95,6 @@ header .contact_link {
 }
  
 #content h1 {
-  margin: 0 0 6px;
-  font-weight: 700;
-  font-size: 2.0em;
-  white-space: pre;
-  text-shadow: 0 1px 1px #ffffff;
-}
- 
-#content h2 {
-  color: #8b8b8b;
-  font-size: 1.6em;
-  font-weight: 700;
-  width: 540px;
-  text-shadow: 0 1px 1px #ffffff;
-}
- 
-#content h3 {
   margin-bottom: 36px;
   font-size: 1.5em;
   font-weight: 400;
@@ -120,10 +104,27 @@ header .contact_link {
   padding-bottom: 4px;
   padding-top: 4px;
   margin-top: -4px;
+  padding: 0px;
 }
 
 #content h4 {
   font-weight: 500;
+}
+
+#intro h1 {
+  margin: 0 0 6px;
+  font-weight: 700;
+  font-size: 2.0em;
+  white-space: pre;
+  text-shadow: 0 1px 1px #ffffff;
+}
+ 
+#intro h2 {
+  color: #8b8b8b;
+  font-size: 1.6em;
+  font-weight: 700;
+  width: 540px;
+  text-shadow: 0 1px 1px #ffffff;
 }
 
 section {
@@ -257,9 +258,10 @@ section#services li {
   float: left;
   margin: 10px;
   padding: 2px;
+  height: 150px;
 }
 
-section#services li:first-of-type {
+section#services li.first {
   margin-left: 0;
   padding-left: 0;
 }
@@ -290,8 +292,8 @@ blockquote {
   font-weight: 400;
   font-style: normal;
   quotes: '\201C' '\201D';
-  width: 640px;
-  margin: 40px auto;
+  width: 800px;
+  margin: 10px auto;
   text-align: justify;
   font-size: .8em;
   text-indent: 20px;
@@ -311,7 +313,7 @@ blockquote::before {
   content: open-quote;
   left: -60px;
   top: 60px;
-  padding: 4px 4px 10px;
+  padding: 4px 4px 70px;
   border-radius: 3px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
