@@ -93,8 +93,18 @@ header .contact_link {
   font-weight: 400;
   font-size: .9em;
 }
- 
+
 #content h1 {
+  margin-bottom:  36px;
+  font-size:  1.5em;
+  font-weight:  400;
+  padding-left: 20px;
+  marign-left: -23px;
+  margin-top:  -3px;
+  padding:  0px;
+}
+ 
+#content h3 {
   margin-bottom: 36px;
   font-size: 1.5em;
   font-weight: 400;
@@ -258,7 +268,38 @@ section#services li {
   float: left;
   margin: 10px;
   padding: 2px;
-  height: 150px;
+  height: 190px;
+}
+
+#services .ic_service {
+  position: relative;
+  top: 26px;
+  height: 32px;
+  width: 32px;
+}
+
+#services h4 {
+  padding-left: 42px;
+}
+
+.ic_service.design {
+  background: url(../img/design.png) no-repeat center center;
+}
+
+.ic_service.money {
+  background: url(../img/money.png) no-repeat center center;
+}
+.ic_service.search {
+  background: url(../img/search.png) no-repeat center center;
+}
+.ic_service.design {
+  background: url(../img/design.png) no-repeat center center;
+}
+.ic_service.design {
+  background: url(../img/design.png) no-repeat center center;
+}
+.ic_service.design {
+  background: url(../img/design.png) no-repeat center center;
 }
 
 section#services li.first {
