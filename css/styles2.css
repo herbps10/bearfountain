@@ -68,6 +68,7 @@ header {
   margin: 0;
   font-weight: 700;
   padding: 20px 0;
+  position: relative;
 }
  
 header h1 {
@@ -173,7 +174,6 @@ section#intro {
 nav {
   z-index: 100;
   margin: 20px 0;
-  width: 780px;
   margin: auto;
   -webkit-transition: all 200ms ease-in;
   -moz-transition: all 200ms ease-in;
@@ -183,6 +183,32 @@ nav {
   font-size: .9em;
   color: #383838;
   text-align: right;
+  position: absolute;
+  left: 520px;
+  padding: 10px;
+}
+
+nav li a:hover {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.belowFold {
+  background: rgba(255, 255, 255, 0.8);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid #ccc;
+  left: 980px;
+  right: -180px;
+  box-shadow: 0px 0px 3px #ccc;
+}
+
+.belowFold li {
+  display: block;
+  padding: 5px 0;
+}
+
+.belowFold li a:hover {
+  text-decoration: underline;
 }
 
 nav li {

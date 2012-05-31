@@ -24,11 +24,23 @@
       $('a').smoothScroll();
  
       $(window).scroll(function() {
-        if($(window).scrollTop() < 520) {
-          $("nav").css('top', '520px');
+        if($(window).scrollTop() < 10) {
+          $("nav").css('top', '10px');
         }
         else {
           $("nav").css('top', $(window).scrollTop());
+        }
+
+        if($(window).scrollTop() < 50) {
+           $("nav").removeClass('belowFold');
+
+           $(".home").remove();
+        }
+        else {
+           $("nav").addClass('belowFold');
+           if($(".home").length == 0) {
+            $("nav ul").prepend("<li class='home'><a href='#color'>home</a></li>");
+           }
         }
       });
 
@@ -62,9 +74,10 @@
     <header> 
       <nav>
         <ul>
-          <li class="current"><a href="#contact">contact</a></li>
           <li><a href="#services">services</a></li>
           <li><a href="#showcase">portfolio</a></li>
+          <li><a href="#quotes">testimonials</a></li>
+          <li><a href="#contact">contact</a></li>
         </ul>
       </nav>
     </header> 
