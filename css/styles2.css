@@ -211,13 +211,11 @@ nav li a:hover {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border: 1px solid #ccc;
-  right: -140px;
   box-shadow: 0px 0px 3px #ccc;
-  width: 150px;
+  width: 500px;
 }
 
 .belowFold li {
-  display: block;
   padding: 5px 0;
 }
 
@@ -571,6 +569,7 @@ section a:hover {
 #thebear {
   float: right;
   height: 300px;
+  margin: 60px;
 }
 
 .field {
