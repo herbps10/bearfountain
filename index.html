@@ -24,7 +24,7 @@
       $('a').smoothScroll();
  
       $(window).scroll(function() {
-        if($(window).scrollTop() < 10) {
+        if($(window).scrollTop() < 500) {
           $("nav").css('top', '10px');
         }
         else {
@@ -33,7 +33,6 @@
 
         if($(window).scrollTop() < 50) {
            $("nav").removeClass('belowFold');
-
            $(".home").remove();
         }
         else {
@@ -173,20 +172,20 @@
           <div class='left'>
               <h1>Give us a shout</h1>
               <form action='mailer.php' method='POST'>
-                  <div class='field'>
+                  <fieldset>
                     <label for='name'>Your Name</label><br/>
                     <input type='text' name='name' />
-                  </div>
+                  </fieldset>
 
-                  <div class='field'>
+                  <fieldset>
                     <label for='email'>Your Email</label><br/>
                     <input type='text' name='email' />
-                  </div>
+                  </fieldset>
 
-                  <div class='field'>
+                  <fieldset>
                     <label for='name'>Message</label><br/>
                     <textarea name='message'></textarea>
-                  </div>
+                  <fieldset>
 
                   <div class='actions'>
                     <input type='submit' value='Send &raquo;' />

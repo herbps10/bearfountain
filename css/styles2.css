@@ -176,6 +176,7 @@ section#intro {
   margin: 60px auto 280px;
   padding: 40px 30px;
   width: 700px;
+  background-color: white;
   background-color: rgba(255, 255, 255, 0.69);
   border-radius: 8px;
   -moz-box-shadow: 0 0 40px rgba(255, 255, 255, 0.67);
@@ -213,11 +214,10 @@ nav li a:hover {
   left: 980px;
   right: -140px;
   box-shadow: 0px 0px 3px #ccc;
-  width: 150px;
+  width: 500px;
 }
 
 .belowFold li {
-  display: block;
   padding: 5px 0;
 }
 
@@ -571,6 +571,7 @@ section a:hover {
 #thebear {
   float: right;
   height: 300px;
+  margin: 60px;
 }
 
 .field {
